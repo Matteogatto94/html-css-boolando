@@ -1,9 +1,14 @@
+/*  #region regole comuni */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* #endregion regole comuni */
+
+/* #region utilità */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -12,6 +17,14 @@ body {
 header {
     background-color: red;
     box-shadow: 0 0 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+main {
+    margin-top: 5rem;
 }
 
 a {
@@ -28,6 +41,7 @@ a {
       width: calc(100% / 12 * 4);
       position: relative;
       padding: 1rem;
+      margin-top: 5rem;
 }
 
 .center {
@@ -42,6 +56,37 @@ a {
       display: flex;
       flex-wrap: wrap;
 }
+
+.container {
+    margin: 50px 0;
+}
+
+img {
+    width: 100%;
+}
+
+.cuore,
+.info_products {
+      position: absolute;
+}
+
+.bg-imp {
+      background-color: #FF0000;
+}
+
+.bg-green {
+      background-color: #008000;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+
+
+/* #endregion utilità */
+
+/* #region header */
 
 .menu {
     width: 80%;
@@ -67,7 +112,200 @@ header .row {
 .categories a:hover {
     font-size: 20px;
 }
-.personal i:hover {
+.utent_icons i:hover {
     cursor: pointer;
     scale: 1.5;
 }
+
+/* #endregion header */
+
+/* #region main */
+.container {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.saldi,
+.eco {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    margin-right:0.2rem;
+}
+
+.cuore {
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: #FFFFFF;
+    right: 1rem;
+    top: 2rem;
+    visibility: hidden;
+}
+
+.col-4:hover .cuore {
+    visibility: visible;
+}
+
+.cuore:hover {
+    color:#FF0000;
+    cursor: pointer;
+}
+
+.info_prodotti {
+    left: 1rem;
+    bottom: 8rem;
+}
+
+.info_products h5 {
+    color: gray;
+}
+
+.prezzo,
+.prezzo_sbarrato {
+    font-size: 0.8rem;
+}
+
+.prezzo {
+    color: #FF0000;
+    font-weight: 800;
+    
+}
+
+.prezzo_sbarrato {
+    text-decoration: line-through;
+}
+
+.card img {
+    visibility: hidden;
+}
+
+.card_1{
+    background-image: url(../img/1.webp);
+    background-size: cover;
+}
+
+.card_1:hover {
+    background-image: url(../img/1b.webp);
+    cursor: pointer;
+}
+
+.card_2{
+    background-image: url(../img/2.webp);
+    background-size: cover;
+}
+
+.card_2:hover {
+    background-image: url(../img/2b.webp);
+    cursor: pointer;
+
+}
+
+.card_3{
+    background-image: url(../img/3.webp);
+    background-size: cover;
+}
+
+.card_3:hover {
+    background-image: url(../img/3b.webp);
+    cursor: pointer;
+
+}
+
+.card_4{
+    background-image: url(../img/4.webp);
+    background-size: cover;
+}
+
+.card_4:hover {
+    background-image: url(../img/4b.webp);
+    cursor: pointer;
+
+}
+
+.card_5{
+    background-image: url(../img/5.webp);
+    background-size: cover;
+}
+
+.card_5:hover {
+    background-image: url(../img/5b.webp);
+    cursor: pointer;
+
+}
+
+.card_6{
+    background-image: url(../img/6.webp);
+    background-size: cover;
+}
+
+.card_6:hover {
+    background-image: url(../img/6b.webp);
+    cursor: pointer;
+
+}
+
+.saldi {
+    position: absolute;
+    bottom: 70px;
+}
+
+.eco {
+    position: absolute;
+    bottom: 70px;
+    left: 73px;
+}
+
+.eco_1 {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    margin-right:0.2rem;
+    position: absolute;
+    bottom: 70px;
+}
+/* #endregion main */
+
+/* #region footer */
+
+footer {
+    background-color: #1A1A1A;
+    margin-top: 10rem;
+    
+
+}
+
+.informations {
+    width: 80%;
+    margin:auto;
+    color: #FFFFFF;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.infos {
+    float: left;
+    padding: 2rem 0;
+}
+
+.infos ul {
+    display: flex;
+    padding-top: 0.6rem;
+}
+.infos li {
+    padding-right: 0.4rem;
+    list-style: none;
+}
+
+.social {
+    float: right;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social_icon > i {
+    padding: 0.6rem;
+}
+/* #endregion footer */
